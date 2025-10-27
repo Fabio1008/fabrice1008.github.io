@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/fabricedev.github.io/static/css/main.cb23ee1f.css",
-    "main.js": "/fabricedev.github.io/static/js/main.7a718a01.js",
-    "static/js/787.7da95b79.chunk.js": "/fabricedev.github.io/static/js/787.7da95b79.chunk.js",
-    "static/media/moi.webp": "/fabricedev.github.io/static/media/moi.05a99a9259204a44e576.webp",
-    "static/media/fabrice-mongba-logol.png": "/fabricedev.github.io/static/media/fabrice-mongba-logol.68b28a123bdc8d21b908.png",
-    "static/media/cv.pdf": "/fabricedev.github.io/static/media/cv.b5e8c310c9cbae22beed.pdf",
-    "static/media/fabrice-mongba-logo.png": "/fabricedev.github.io/static/media/fabrice-mongba-logo.a0c13827ae2a2d10f2a7.png",
-    "static/media/darkmode-404-page-not-found.png": "/fabricedev.github.io/static/media/darkmode-404-page-not-found.872596d72a3647fbad37.png",
-    "static/media/404-page-not-found.png": "/fabricedev.github.io/static/media/404-page-not-found.1626debd15d7d46f8304.png",
-    "static/media/pdf.svg": "/fabricedev.github.io/static/media/pdf.a8d18c950eae524d6bbb1b2622836a3d.svg",
-    "index.html": "/fabricedev.github.io/index.html",
-    "static/media/lightarrow.svg": "/fabricedev.github.io/static/media/lightarrow.e04cd47bddf5758efcac977084547a35.svg",
-    "static/media/darkarrow.svg": "/fabricedev.github.io/static/media/darkarrow.5799d9d7b662b8ffab5dfc0c4a02db44.svg",
-    "static/media/sun.svg": "/fabricedev.github.io/static/media/sun.ccb8251219174b6b9246859563398246.svg",
-    "static/media/moon.svg": "/fabricedev.github.io/static/media/moon.cd07e41489f9e85fda680b14ae53e6d8.svg",
-    "main.cb23ee1f.css.map": "/fabricedev.github.io/static/css/main.cb23ee1f.css.map",
-    "main.7a718a01.js.map": "/fabricedev.github.io/static/js/main.7a718a01.js.map",
-    "787.7da95b79.chunk.js.map": "/fabricedev.github.io/static/js/787.7da95b79.chunk.js.map"
+    "main.css": "/static/css/main.cb23ee1f.css",
+    "main.js": "/static/js/main.aae98483.js",
+    "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
+    "static/media/moi.webp": "/static/media/moi.05a99a9259204a44e576.webp",
+    "static/media/fabrice-mongba-logol.png": "/static/media/fabrice-mongba-logol.68b28a123bdc8d21b908.png",
+    "static/media/cv.pdf": "/static/media/cv.b5e8c310c9cbae22beed.pdf",
+    "static/media/fabrice-mongba-logo.png": "/static/media/fabrice-mongba-logo.a0c13827ae2a2d10f2a7.png",
+    "static/media/darkmode-404-page-not-found.png": "/static/media/darkmode-404-page-not-found.872596d72a3647fbad37.png",
+    "static/media/404-page-not-found.png": "/static/media/404-page-not-found.1626debd15d7d46f8304.png",
+    "static/media/pdf.svg": "/static/media/pdf.a8d18c950eae524d6bbb1b2622836a3d.svg",
+    "index.html": "/index.html",
+    "static/media/lightarrow.svg": "/static/media/lightarrow.e04cd47bddf5758efcac977084547a35.svg",
+    "static/media/darkarrow.svg": "/static/media/darkarrow.5799d9d7b662b8ffab5dfc0c4a02db44.svg",
+    "static/media/sun.svg": "/static/media/sun.ccb8251219174b6b9246859563398246.svg",
+    "static/media/moon.svg": "/static/media/moon.cd07e41489f9e85fda680b14ae53e6d8.svg",
+    "main.cb23ee1f.css.map": "/static/css/main.cb23ee1f.css.map",
+    "main.aae98483.js.map": "/static/js/main.aae98483.js.map",
+    "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cb23ee1f.css",
-    "static/js/main.7a718a01.js"
+    "static/js/main.aae98483.js"
   ]
 }
