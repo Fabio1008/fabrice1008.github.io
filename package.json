@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fabio1008.github.io/fabrice1008.github.io",
+  "homepage": "https://fabio1008.github.io/fabrice1008.github.io/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.14.1",
