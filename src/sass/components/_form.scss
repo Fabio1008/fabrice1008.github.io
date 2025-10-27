@@ -1,0 +1,65 @@
+@import '../breakpoint';
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  .dialog {
+    background-color: #f8f8f8de;
+    border: 5px solid #cccccc;
+    border-radius: 5px;
+    max-width: 70rem;
+    text-align: justify;
+    transform: translate(-50%, -50%);
+    padding: 2rem 4rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    &__button {
+      background-color: #f8f8f8de;
+      border: none;
+      color: red;
+      cursor: pointer;
+      font-size: 18px;
+      position: absolute;
+      left: 8px;
+      top: 8px;
+    }
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 40%;
+    @include mobile {
+      width: 80%;
+    }
+    &__label {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    &__input {
+      border: 3px solid #cccccc;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    &__input:focus {
+      outline: none;
+    }
+    &__textarea {
+      border: 3px solid #cccccc;
+      border-radius: 5px;
+      font-size: 16px;
+      padding: 10px;
+    }
+    &__textarea:focus {
+      outline: none;
+    }
+  }
+}

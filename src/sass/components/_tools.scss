@@ -1,0 +1,18 @@
+@import '../breakpoint';
+
+.skills__tools-grid {
+  align-items: center;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+  & img {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tools1",
+    "title": "GitHub",
+    "image": "../assets/skills/tools/github-mark.svg",
+    "alt": "Icône Github"
+  },
+  {
+    "id": "tools2",
+    "title": "Git",
+    "image": "../assets/skills/tools/git-mark.svg",
+    "alt": "Icône Git"
+  },
+  {
+    "id": "tools3",
+    "title": "VSCode",
+    "image": "../assets/skills/tools/vscode-mark.svg",
+    "alt": "Icône VSCode"
+  },
+  {
+    "id": "tools4",
+    "title": "Postman",
+    "image": "../assets/skills/tools/postman-mark.svg",
+    "alt": "Icône Postman"
+  },
+  {
+    "id": "tools5",
+    "title": "Slack",
+    "image": "../assets/skills/tools/slack-mark.svg",
+    "alt": "Icône Slack"
+  },
+  {
+    "id": "tools6",
+    "title": "Trello",
+    "image": "../assets/skills/tools/trello-mark.svg",
+    "alt": "Icône Trello"
+  },
+  {
+    "id": "tools7",
+    "title": "Swagger",
+    "image": "../assets/skills/tools/swagger-mark.svg",
+    "alt": "Icône Swagger"
+  },
+  {
+    "id": "tools8",
+    "title": "Figma",
+    "image": "../assets/skills/tools/figma-mark.svg",
+    "alt": "Icône Figma"
+  },
+  {
+    "id": "tools9",
+    "title": "SEO",
+    "image": "../assets/skills/tools/seo.svg",
+    "alt": "Icône SEO"
+  },
+  {
+    "id": "tools10",
+    "title": "ChatGPT",
+    "image": "../assets/skills/tools/chatgpt-mark.svg",
+    "alt": "Icône ChatGPT"
+  }
+]

@@ -1,0 +1,14 @@
+@import '../breakpoint';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @include mobile {
+    align-items: center;
+    flex-direction: column;
+  }
+  &__title {
+    display: none;
+  }
+}

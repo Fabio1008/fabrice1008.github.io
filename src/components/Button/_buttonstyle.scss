@@ -1,0 +1,109 @@
+@import '../breakpoint';
+
+// Conteneur pour le bouton CV (centré sur mobile)
+.button-cv {
+  @include mobile {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// Style commun pour tous les boutons interactifs
+.intro__desc-cv,
+.error__button,
+.form__button,
+.project__button {
+  position: relative; // ✅ Nécessaire pour centrer les cercles
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 1000px;
+  cursor: pointer;
+  width: 220px;
+  height: 50px;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+
+  img {
+    height: 24px;
+    width: 24px;
+    margin-left: 8px;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  // Cercles animés centrés
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+
+  &::before {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border: 4px solid var(--btn-border);
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    box-shadow: 0 0 20px var(--btn-glow);
+  }
+
+  &::after {
+    width: 30px;
+    height: 30px;
+    border: 4px solid var(--btn-border);
+    animation: ring 1.5s infinite;
+  }
+
+  &:hover::after {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+// 🌈 Thème clair et sombre
+:root {
+  --btn-bg: #2200b8;
+  --btn-border: #2200b8;
+  --btn-text: #ffffff;
+  --btn-glow: rgba(34, 0, 184, 0.6);
+}
+
+body.dark-mode {
+  --btn-bg: #a3dee7;
+  --btn-border: #a3dee7;
+  --btn-text: #000000;
+  --btn-glow: rgba(163, 222, 231, 0.6);
+}
+
+// Animation d’onde
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 260px;
+    height: 100px;
+    opacity: 0;
+  }
+}

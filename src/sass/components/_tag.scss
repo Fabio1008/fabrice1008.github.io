@@ -1,0 +1,9 @@
+@import '../breakpoint';
+
+.tags {
+  display: flex;
+  gap: 10px;
+  @include mobile {
+    flex-wrap: wrap;
+  }
+}

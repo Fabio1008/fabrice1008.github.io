@@ -1,0 +1,45 @@
+@import './breakpoint';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Roboto Slab', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: auto;
+  margin: 20px 5%;
+  width: 90%;
+  @include tablet {
+    margin: 20px 4%;
+  }
+  @include mobile {
+    margin: 20px 6%;
+    overflow-x: hidden;
+  }
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+li,
+button {
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 1.2px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  @include tablet {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+}

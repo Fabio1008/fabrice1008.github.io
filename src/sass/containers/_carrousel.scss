@@ -1,0 +1,14 @@
+@import '../breakpoint';
+
+.carousel img {
+  max-height: 600px;
+  max-width: 600px;
+  @include tablet {
+    max-height: 600px;
+    max-width: 400px;
+  }
+  @include mobile {
+    max-height: 600px;
+    max-width: 400px;
+  }
+}

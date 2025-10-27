@@ -1,0 +1,112 @@
+@import '../breakpoint';
+
+.filter__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  &-bar {
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 18px;
+    height: 45px;
+    text-align: center;
+    max-width: 180px;
+  }
+}
+
+
+.grid__project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  justify-content: space-between;
+  margin-top: 100px;
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+  &__card {
+    border: none;
+    height: 350px;
+    perspective: 1000px;
+    width: 100%;
+    @include tablet {
+      height: 300px;
+    }
+    &-inner {
+      position: relative;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    &-front {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border: none;
+      border-bottom-left-radius: 25px;
+      border-top-right-radius: 25px;
+      height: 350px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      @include tablet {
+        height: 300px;
+      }
+      &-img {
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
+        filter: brightness(1.2);
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+      &-title {
+        text-transform: uppercase;
+        position: absolute;
+        top: 0;
+        left: 30%;
+      }
+    }
+    &-back {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      background: #b4b4b4;
+      border: none;
+      border-bottom-right-radius: 25px;
+      border-top-left-radius: 25px;
+      height: 350px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      @include tablet {
+        height: 300px;
+      }
+      transform: rotateY(180deg);
+      &-title {
+        text-transform: uppercase;
+        position: absolute;
+        top: 20px;
+        left: 30%;
+      }
+      &-desc {
+        position: absolute;
+        left: 20px;
+        top: 120px;
+      }
+      &-info {
+        position: absolute;
+        right: 20px;
+        top: 320px;
+        @include tablet {
+          top: 250px;
+        }
+      }
+    }
+  }
+  &__card:hover .grid__project__card-inner {
+    transform: rotateY(180deg);
+  }
+}

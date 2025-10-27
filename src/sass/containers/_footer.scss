@@ -1,0 +1,30 @@
+@import '../breakpoint';
+
+.footer {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  @include mobile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__left {
+      order: 0;
+      width: 11%;
+    }
+    &__middle {
+      order: 2;
+    }
+    &__right {
+      order: 1;
+    }
+  }
+  & a,
+  & p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

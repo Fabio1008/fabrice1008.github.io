@@ -1,0 +1,78 @@
+@import '../breakpoint';
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 96%;
+  @include mobile {
+    flex-direction: column;
+  }
+  &__title {
+    display: none;
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 60%;
+    @include mobile {
+      text-align: center;
+      width: 100%;
+    }
+    &-liens {
+      align-items: center;
+      display: flex;
+      margin-top: 20px;
+      @include mobile {
+        justify-content: center;
+        margin-right: -35px;
+      }
+      & a {
+        padding-right: 35px;
+        & img {
+          @include tablet {
+            height: 60px;
+            width: 60px;
+          }
+          @include mobile {
+            height: 60px;
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+  &__photo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 25%;
+    @include mobile {
+      margin-top: 40px;
+      width: 100%;
+    }
+    & img {
+      border-radius: 0 25px;
+      max-height: auto;
+      max-width: 310px;
+      @include tablet {
+        max-width: 280px;
+      }
+      @include mobile {
+        max-width: 280px;
+      }
+    }
+    & h3 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-top: 10px;
+      @include tablet {
+        font-size: 16px;
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+}

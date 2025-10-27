@@ -1,0 +1,306 @@
+[
+  {
+    "id": "project1",
+    "title": "Riding Cities",
+    "category": "HTML",
+    "briefDescription": "Riding Cities est une association sportive qui promeut le skate en région parisienne. L'association souhaite améliorer son site internet.",
+    "cover": "../assets/projects/riding-cities/cover.webp",
+    "alt": "Photo d'un skateboard",
+    "description": "Le projet 2 du parcours Intégrateur Web d'OpenClassrooms nous permet de découvrir le langage HTML au travers du site Internet de Riding Cities. ",
+    "mission": "Je rejoins l'agence Webonzaï pour un stage en tant que développeur junior. Romain, mon maître de stage, me demande d'actualiser la page Internet de Riding Cities en créant une nouvelle section appelée : Les Membres Fondateurs ; ainsi que la modification de la section existante des plannings en introduisant deux plannings : l'un pour les enfants et l'autre pour les adultes. Et, ainsi que la mise en place du CSS existant sur les nouveaux éléments.",
+    "competences": [
+      "Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML."
+    ],
+    "tags": ["HTML", "CSS"],
+    "pictures": [
+      "../assets/projects/riding-cities/mock0.webp",
+      "../assets/projects/riding-cities/mock1.webp",
+      "../assets/projects/riding-cities/mock2.webp",
+      "../assets/projects/riding-cities/mock3.webp",
+      "../assets/projects/riding-cities/mock4.webp",
+      "../assets/projects/riding-cities/mock5.webp",
+      "../assets/projects/riding-cities/mock6.webp",
+      "../assets/projects/riding-cities/mock7.webp"
+    ],
+    "site": "https://github.com/Fabio1008",
+    "github": "https://github.com/Fabio1008"
+  },
+  {
+    "id": "project2",
+    "title": "Booki",
+    "category": "HTML",
+    "briefDescription": "Booki est une start-up qui souhaite permettre aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix.",
+    "cover": "../assets/projects/booki/cover.webp",
+    "alt": "Photo d'un hébergement du site de Booki",
+    "description": "Le projet 3 du parcours Intégrateur Web d'OpenClassrooms nous permet d'intégrer l'interface du site de Booki en utilisant du code HTML et CSS.",
+    "mission": "Je rejoins la start-up Booki en tant que développeur en alternance. Je travaille en étroite collaboration avec ma cheffe technique Sarah et le designer Loïc pour mettre en place l'interface du site et responsive.",
+    "competences": [
+      "Installer un environnement de développement front-end",
+      "Implémenter une interface responsive avec HTML et CSS.",
+      "Intégrer du contenu conformément à une maquette avec HTML et CSS."
+    ],
+    "tags": ["HTML", "CSS", "Responsive", "VSCode", "Figma"],
+    "pictures": [
+      "../assets/projects/booki/mock0.webp",
+      "../assets/projects/booki/mock1.webp",
+      "../assets/projects/booki/mock2.webp",
+      "../assets/projects/booki/mock3.webp",
+      "../assets/projects/booki/mock4.webp",
+      "../assets/projects/booki/mock5.webp",
+      "../assets/projects/booki/mock6.webp",
+      "../assets/projects/booki/mock7.webp"
+    ],
+    "site": "https://matthieu83600.github.io/Fabio1008",
+    "github": "https://github.com/Fabio1008"
+  },
+  {
+    "id": "project3",
+    "title": "Ohmyfood",
+    "category": "HTML",
+    "briefDescription": "Ohmyfood est une jeune start-up qui souhaite s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite faire sa place à Paris.",
+    "cover": "../assets/projects/ohmyfood/cover.webp",
+    "alt": "Photo d'un plat d'un restaurant",
+    "description": "Le projet 4 du parcours Intégrateur Web d'OpenClassrooms consite à intégrer l'interface du site d'Ohmyfood en commençant par la version mobile.",
+    "mission": "Je rejoins la start-up Ohmyfood qui souhaite s'imposer sur la marché de la restauration parisienne. Paul, mon chef technique, me demande alors d'intégrer l'interface mobile et responsive tout en mettant en place des animations CSS.",
+    "competences": [
+      "Intégrer une maquette en mobile-first.",
+      "Mettre en œuvre des animations CSS.",
+      "Versionner son projet avec Git et Github."
+    ],
+    "tags": ["HTML", "Sass", "Responsive", "VSCode", "Figma", "Git", "GitHub"],
+    "pictures": [
+      "../assets/projects/ohmyfood/mock0.webp",
+      "../assets/projects/ohmyfood/mock1.webp",
+      "../assets/projects/ohmyfood/mock2.webp",
+      "../assets/projects/ohmyfood/mock3.webp",
+      "../assets/projects/ohmyfood/mock4.webp",
+      "../assets/projects/ohmyfood/mock5.webp",
+      "../assets/projects/ohmyfood/mock6.webp",
+      "../assets/projects/ohmyfood/mock7.webp"
+    ],
+    "site": "https://fabio1008.github.io/",
+    "github": "https://github.com/Fabio1008"
+  },
+  {
+    "id": "project4",
+    "title": "Print It",
+    "category": "JavaScript",
+    "briefDescription": "Print It est une petite entreprise familiale. Elle souhaite dynamiser son site internet en y ajoutant un carrousel.",
+    "cover": "../assets/projects/print-it/cover.webp",
+    "alt": "Photo d'imagerie",
+    "description": "Le projet 5 du parcours Intégrateur Web d'OpenClassrooms nous permet de découvrir le langage JavaScript au travers du site de Print It.",
+    "mission": "Je débute en tant que développeur front-end en freelance, et je décroche l'offre qui consiste à dynamiser le site Internet statique de Print It. Le directeur, Lucien Gerodo, me demande alors de réaliser un carrousel dynamique.",
+    "competences": ["Programmer en utilisant les fondamentaux de JavaScript"],
+    "tags": ["HTML", "CSS", "JavaScript", "VSCode"],
+    "pictures": [
+      "../assets/projects/print-it/mock0.webp",
+      "../assets/projects/print-it/mock1.webp",
+      "../assets/projects/print-it/mock2.webp",
+      "../assets/projects/print-it/mock3.webp",
+      "../assets/projects/print-it/mock4.webp",
+      "../assets/projects/print-it/mock5.webp",
+      "../assets/projects/print-it/mock6.webp",
+      "../assets/projects/print-it/mock7.webp"
+    ],
+    "site": "https://fabio1008.github.io/Fabio1008print-it-website.github.io/",
+    "github": "https://github.com/Fabio1008"
+  },
+  {
+    "id": "project5",
+    "title": "Portfolio - Sophie Bluel",
+    "category": "JavaScript",
+    "briefDescription": "Sophie Bluel est une architecte d'intérieur qui souhaite mettre en avant son travail avec un site portfolio où elle pourra elle-même les ajouter en se connectant à son interface administrateur.",
+    "cover": "../assets/projects/portfolio-sophie-bluel/cover.webp",
+    "alt": "Photo de rénovation d'un bar",
+    "description": "Le projet 6 du parcours Intégrateur Web d'OpenClassrooms nous emmène sur la conception du site portfolio d'une architecte en utilisant JavaScript et en communiquant avec une API.",
+    "mission": "Je travaille comme développeur front-end pour l'agence ArchiWebos. Ayant terminé mon dernier projet, je suis envoyé en renfort sur la conception du site portfolio de l'architecte Sophie Bluel. Charlotte, la cheffe de projet, me demande alors de créer à partir de la maquette l'interface du site ainsi que la gestion du compte de l'architecte en communiquant avec une API créée par la développeuse back-end. La connexion avec l'API permettra à Sophie Bluel de pouvoir se connecter et intéragir en ajoutant / supprimant ses travaux.",
+    "competences": [
+      "Manipuler les éléments du DOM avec JavaScript.",
+      "Gérer les événements utilisateurs avec JavaScript.",
+      "Récupérer les données utilisateurs dans le JavaScript via des formulaires."
+    ],
+    "tags": ["HTML", "CSS", "JavaScript", "Figma", "API", "Swagger"],
+    "pictures": [
+      "../assets/projects/portfolio-sophie-bluel/mock0.webp",
+      "../assets/projects/portfolio-sophie-bluel/mock1.webp",
+      "../assets/projects/portfolio-sophie-bluel/mock2.webp",
+      "../assets/projects/portfolio-sophie-bluel/mock3.webp",
+      "../assets/projects/portfolio-sophie-bluel/mock4.webp",
+      "../assets/projects/portfolio-sophie-bluel/mock5.webp",
+      "../assets/projects/portfolio-sophie-bluel/mock6.webp",
+      "../assets/projects/portfolio-sophie-bluel/mock7.webp"
+    ],
+    "github": "https://github.com/Fabio1008"
+  },
+  
+  {
+    "id": "project7",
+    "title": "Kasa",
+    "category": "React",
+    "briefDescription": "Kasa est dans le métier de la location d'appartements entre particuliers depuis maintenant 10 ans, et souhaite aujourd'hui développer une nouvelle plateforme web avec React.",
+    "cover": "../assets/projects/kasa/cover.webp",
+    "alt": "Logo de Kasa",
+    "description": "Le projet 7 du parcours Intégrateur Web d'OpenClassrooms consiste à développer la nouvelle plateforme web de Kasa en utilisant React.",
+    "mission": "Kasa me recrute en tant que développeur front-end en freelance. Laura, la cheffe technique, me demande de mettre en place la nouvelle plateforme web en utilisant React, grâce aux maquettes créées par Paul le designer de l'équipe.",
+    "competences": [
+      "Initialiser une application avec Create React App.",
+      "Configurer la navigation entre les pages de l'application avec React Router.",
+      "Développer des éléments de l'interface d'un site web grâce à des composants React.",
+      "Développer une interface web avec Sass."
+    ],
+    "tags": ["React", "React-Router", "Sass", "Responsive", "VSCode", "Figma"],
+    "pictures": [
+      "../assets/projects/kasa/mock0.webp",
+      "../assets/projects/kasa/mock1.webp",
+      "../assets/projects/kasa/mock2.webp",
+      "../assets/projects/kasa/mock3.webp",
+      "../assets/projects/kasa/mock4.webp",
+      "../assets/projects/kasa/mock5.webp",
+      "../assets/projects/kasa/mock6.webp",
+      "../assets/projects/kasa/mock7.webp"
+    ],
+    "site": "https://github.com/Fabio1008",
+    "github": "https://github.com/Fabio1008"
+  },
+  {
+    "id": "project8",
+    "title": "Nina Carducci",
+    "category": "SEO",
+    "briefDescription": "Je propose mes services d'optimisation SEO à plusieurs clients. Et Nina Carducci, photographe expérimentée basée à Bordeaux accepte ma proposition d'optimisation de son site.",
+    "cover": "../assets/projects/nina-carducci/cover.webp",
+    "alt": "Photo de mariage prise par Nina Carducci",
+    "description": "Le projet 8 du parcours Intégrateur Web d'OpenClassrooms consiste à améliorer les performances et le référencement naturel du site d'un client.",
+    "mission": "Je suis développeur front-end en freelance, et je me décide à proposer mes services d'optimisation SEO à de nouveaux clients. Je prends contact avec les administrateurs de divers sites pouvant être optimisés. Nina Carducci, photographe professionnelle à Bordeaux, accepte ma proposition d'optimisation de son site. Ma mission est donc d'optimiser son site tant sur les performances que sur le SEO. Et de mettre en avant cette optimisation en lui fournissant un rapport d'optimisation, lui présentant toutes les actions effectuées ainsi que leur impact.",
+    "competences": ["Optimiser la performance d'un site web."],
+    "tags": ["HTML", "CSS", "JavaScript", "Responsive", "SEO"],
+    "pictures": [
+      "../assets/projects/nina-carducci/mock0.webp",
+      "../assets/projects/nina-carducci/mock1.webp",
+      "../assets/projects/nina-carducci/mock2.webp",
+      "../assets/projects/nina-carducci/mock3.webp",
+      "../assets/projects/nina-carducci/mock4.webp",
+      "../assets/projects/nina-carducci/mock5.webp",
+      "../assets/projects/nina-carducci/mock6.webp",
+      "../assets/projects/nina-carducci/mock7.webp"
+    ],
+    "site": "https://fabio1008.github.io/ninacarducci.github.io/",
+    "github": "https://github.com/Fabio1008"
+  },
+  {
+    "id": "project9",
+    "title": "724 events",
+    "category": "Debug",
+    "briefDescription": "L'agence d'événementielle 724events me contacte pour son site vitrine afin de reprendre le développement et débugger le travail déjà mis en place par un autre développeur.",
+    "cover": "../assets/projects/724events/cover.webp",
+    "alt": "Conférence d'un événement de 724events",
+    "description": "Le projet 9 du parcours Intégrateur Web consiste à débugger le site d'une agence d'événementiel appelée 724events.",
+    "mission": "Je suis développeur front-end en freelance et l'agence 724events me contacte. La mission confiée par Jean-Baptiste, le directeur marketing, est la suivante : débugger le code du site déjà mis en place par un autre développeur qui a dû arrêté le développement, mettre en place des tests unitaires et fonctionnels ainsi que la rédaction d'un cahier de recette comprenant les différents scénarios possibles pour tester le site.",
+    "competences": [
+      "Débugger un site web grâce aux Chrome DevTools.",
+      "Rédiger un cahier de recette pour tester un site."
+    ],
+    "tags": ["React", "Tests", "Debug", "Chrome DevTools"],
+    "pictures": [
+      "../assets/projects/724events/mock0.webp",
+      "../assets/projects/724events/mock1.webp",
+      "../assets/projects/724events/mock2.webp",
+      "../assets/projects/724events/mock3.webp",
+      "../assets/projects/724events/mock4.webp",
+      "../assets/projects/724events/mock5.webp",
+      "../assets/projects/724events/mock6.webp",
+      "../assets/projects/724events/mock7.webp"
+    ],
+    "site": "https://github.com/Fabio1008",
+    "github": "https://github.com/Fabio1008"
+  },
+  {
+    "id": "project10",
+    "title": "Argent Bank",
+    "category": "React",
+    "briefDescription": "J'intègre Argent Bank, une nouvelle banque en ligne qui souhaite que j'implémente le front-end de son application en utilisant React.",
+    "cover": "../assets/projects/argent-bank/cover.webp",
+    "alt": "Bannière du site",
+    "description": "Le projet 10 du parcours Intégrateur Web d'OpenClassrooms consiste à implémenter le front-end d'une application bancaire : Argent Bank en utilisant React.",
+    "mission": "J'intègre Argent Bank comme développeur front-end. Avery Moreau, chef technique, me confie la mission d'implémenter le front-end de notre application et le tableau de bord de l'utilisateur en communiquant avec l'API.",
+    "competences": [
+      "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front.",
+      "Configurer des routes API pour la communication client / serveur.",
+      "Afficher les données du back end sur l'interface via des appels API."
+    ],
+    "tags": [
+      "React",
+      "React-Router",
+      "Redux",
+      "Sass",
+      "API",
+      "Swagger",
+      "Responsive"
+    ],
+    "pictures": [
+      "../assets/projects/argent-bank/mock0.webp",
+      "../assets/projects/argent-bank/mock1.webp",
+      "../assets/projects/argent-bank/mock2.webp",
+      "../assets/projects/argent-bank/mock3.webp",
+      "../assets/projects/argent-bank/mock4.webp",
+      "../assets/projects/argent-bank/mock5.webp",
+      "../assets/projects/argent-bank/mock6.webp",
+      "../assets/projects/argent-bank/mock7.webp",
+      "../assets/projects/argent-bank/mock8.webp",
+      "../assets/projects/argent-bank/mock9.webp"
+    ],
+    "site": "https://github.com/Fabio1008",
+    "github": "https://github.com/Fabio1008"
+  },
+  {
+    "id": "project6",
+    "title": "Menu Maker",
+    "category": "Gestion de projet",
+    "briefDescription": "Je rejoins l'agence Webgencia qui me confie une mission un peu particulière : planifier le développement du prochain site de notre client Qwenta.",
+    "cover": "../assets/projects/menu-maker/cover.webp",
+    "alt": "Logo du site Menu Maker by Qwenta",
+    "description": "Le projet 11 du parcours Intégrateur Web d'OpenClassrooms est différent des autres projets réalisés, il s'agit de planifier le développement du prochain site de notre client Qwenta.",
+    "mission": "Je suis développeur front-end dans l'agence de Webgencia. Soufiane, le product owner, me confie une mission différente de d'habitude. Il s'agit de mener, préparer et planifier le projet de développement d'un site d'un de nos clients.",
+    "competences": [
+      "Mettre en place une méthode de veille technologique",
+      "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",
+      "Découper une fonctionnalités en tâches pour préparer le développement",
+      "Suivre le déroulement du projet grâce à un outil de gestion de projet",
+      "Présenter la solution technique"
+    ],
+    "tags": ["Gestion de projet", "Méthode agile", "Veille technique"],
+    "pictures": [
+      "../assets/projects/menu-maker/mock0.webp",
+      "../assets/projects/menu-maker/mock1.webp",
+      "../assets/projects/menu-maker/mock2.webp",
+      "../assets/projects/menu-maker/mock3.webp",
+      "../assets/projects/menu-maker/mock4.webp",
+      "../assets/projects/menu-maker/mock5.webp",
+      "../assets/projects/menu-maker/mock6.webp"
+    ],
+    "github": "https://github.com/Fabio1008"
+  },
+  {
+    "id": "project11",
+    "title": "Mon Portfolio",
+    "category": "React",
+    "briefDescription": "Mon site portfolio, celui sur lequel vous naviguez actuellement,  où j'expose les différents projets sur lesquels j'ai travaillé.",
+    "cover": "../assets/projects/my-portfolio/cover.png",
+    "alt": "Logo de mon site",
+    "description": "Le projet 12 et dernier projet du parcours Intégrateur Web d'OpenClassrooms consiste à créer et mettre en ligne son site portfolio.",
+    "mission": "Elle consiste tout simplement à créer mon portfolio qui me servira à me présenter, mettre en avant les différentes compétences que j'ai acquis, et montrer les projets sur lesquels j'ai travaillé tout au long de ma formation avec OpenClassrooms. Puis de déployer mon site en ligne et qu'il soit responsive c'est-à-dire qu'il s'adapte à tous les écrans : pc, tablette, smartphone.",
+    "competences": ["Déployer un site statique en ligne."],
+    "tags": ["React", "React-Router", "Sass", "Responsive"],
+    "pictures": [
+      "../assets/projects/my-portfolio/mock0.webp",
+      "../assets/projects/my-portfolio/mock1.webp",
+      "../assets/projects/my-portfolio/mock2.webp",
+      "../assets/projects/my-portfolio/mock3.webp",
+      "../assets/projects/my-portfolio/mock4.webp",
+      "../assets/projects/my-portfolio/mock5.webp",
+      "../assets/projects/my-portfolio/mock6.webp",
+      "../assets/projects/my-portfolio/mock7.webp"
+    ],
+    "site": "https://github.com/Fabio1008",
+    "github": "https://github.com/Fabio1008"
+  }
+]

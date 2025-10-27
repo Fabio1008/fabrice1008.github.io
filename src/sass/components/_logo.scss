@@ -1,0 +1,69 @@
+@import '../../sass/breakpoint';
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  transition: all 0.3s ease;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 0.5rem; // petit espace entre le logo et le texte
+  }
+
+  img {
+    width: 140px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.15));
+    }
+  }
+
+  // 🧾 Nom à côté du logo
+  .logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+
+    // Mode sombre
+    body.dark-mode & {
+      color: #f5f5f5;
+    }
+  }
+
+  // 🌙 Mode sombre sur le logo
+  body.dark-mode & img {
+    filter: brightness(0.9);
+  }
+
+  // 📱 Responsive
+  @media (max-width: 768px) {
+    img {
+      width: 120px;
+    }
+
+    .logo-text {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    img {
+      width: 100px;
+    }
+
+    .logo-text {
+      font-size: 1rem;
+    }
+  }
+}

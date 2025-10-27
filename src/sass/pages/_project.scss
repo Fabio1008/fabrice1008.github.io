@@ -1,0 +1,93 @@
+@import '../breakpoint';
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @include tablet {
+    margin-left: 10px;
+  }
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    @include mobile {
+      flex-direction: column;
+      margin-top: 50px;
+      text-align: center;
+    }
+    &-arrow {
+      position: absolute;
+      left: 72px;
+      top: 178px;
+      @include tablet {
+        left: 36px;
+        top: 123px;
+      }
+      @include mobile {
+        position: static;
+      }
+    }
+    &-title {
+      font-family: 'Roboto Slab';
+    }
+  }
+  &__section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    &-description {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      width: 80%;
+      @include tablet {
+        margin-bottom: 50px;
+        width: 100%;
+      }
+      @include mobile {
+        margin-bottom: 60px;
+        width: 100%;
+      }
+      &-competences {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        margin-left: 15px;
+        @include tablet {
+          font-size: 16px;
+        }
+      }
+      &-links {
+        display: flex;
+        gap: 75px;
+        @include mobile {
+          align-items: center;
+          flex-direction: column;
+          gap: 50px;
+        }
+      }
+    }
+    &-carrousel {
+      align-items: center;
+      display: flex;
+      width: 100%;
+      @include tablet {
+        margin-bottom: -10px;
+      }
+    }
+  }
+}

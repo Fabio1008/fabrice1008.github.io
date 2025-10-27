@@ -1,0 +1,27 @@
+@import '../../sass/breakpoint';
+
+.header__menu {
+  margin-top: 20px;
+  & ul {
+    display: flex;
+    gap: 30px;
+    @include tablet {
+      gap: 15px;
+    }
+    @include mobile {
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+    }
+    & li {
+      font-size: 20px;
+      @include tablet {
+        font-size: 18px;
+      }
+      @include mobile {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  }
+}
