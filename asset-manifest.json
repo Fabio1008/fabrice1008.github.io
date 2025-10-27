@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.cb23ee1f.css",
+    "main.js": "/portfolio/static/js/main.dcd394b1.js",
+    "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/moi.webp": "/portfolio/static/media/moi.05a99a9259204a44e576.webp",
+    "static/media/fabrice-mongba-logol.png": "/portfolio/static/media/fabrice-mongba-logol.68b28a123bdc8d21b908.png",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.b5e8c310c9cbae22beed.pdf",
+    "static/media/fabrice-mongba-logo.png": "/portfolio/static/media/fabrice-mongba-logo.a0c13827ae2a2d10f2a7.png",
+    "static/media/darkmode-404-page-not-found.png": "/portfolio/static/media/darkmode-404-page-not-found.872596d72a3647fbad37.png",
+    "static/media/404-page-not-found.png": "/portfolio/static/media/404-page-not-found.1626debd15d7d46f8304.png",
+    "static/media/pdf.svg": "/portfolio/static/media/pdf.a8d18c950eae524d6bbb1b2622836a3d.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/lightarrow.svg": "/portfolio/static/media/lightarrow.e04cd47bddf5758efcac977084547a35.svg",
+    "static/media/darkarrow.svg": "/portfolio/static/media/darkarrow.5799d9d7b662b8ffab5dfc0c4a02db44.svg",
+    "static/media/sun.svg": "/portfolio/static/media/sun.ccb8251219174b6b9246859563398246.svg",
+    "static/media/moon.svg": "/portfolio/static/media/moon.cd07e41489f9e85fda680b14ae53e6d8.svg",
+    "main.cb23ee1f.css.map": "/portfolio/static/css/main.cb23ee1f.css.map",
+    "main.dcd394b1.js.map": "/portfolio/static/js/main.dcd394b1.js.map",
+    "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb23ee1f.css",
+    "static/js/main.dcd394b1.js"
+  ]
+}
