@@ -291,14 +291,7 @@
     "competences": ["Déployer un site statique en ligne."],
     "tags": ["React", "React-Router", "Sass", "Responsive"],
     "pictures": [
-      "../assets/projects/my-portfolio/mock0.webp",
-      "../assets/projects/my-portfolio/mock1.webp",
-      "../assets/projects/my-portfolio/mock2.webp",
-      "../assets/projects/my-portfolio/mock3.webp",
-      "../assets/projects/my-portfolio/mock4.webp",
-      "../assets/projects/my-portfolio/mock5.webp",
-      "../assets/projects/my-portfolio/mock6.webp",
-      "../assets/projects/my-portfolio/mock7.webp"
+      "../assets/projects/my-portfolio/cover.png"
     ],
     "site": "fabriceportfolio.vercel.app",
     "github": "https://github.com/Fabio1008"
