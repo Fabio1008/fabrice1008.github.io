@@ -290,6 +290,9 @@
     "mission": "Elle consiste tout simplement à créer mon portfolio qui me servira à me présenter, mettre en avant les différentes compétences que j'ai acquis, et montrer les projets sur lesquels j'ai travaillé tout au long de ma formation avec OpenClassrooms. Puis de déployer mon site en ligne et qu'il soit responsive c'est-à-dire qu'il s'adapte à tous les écrans : pc, tablette, smartphone.",
     "competences": ["Déployer un site statique en ligne."],
     "tags": ["React", "React-Router", "Sass", "Responsive"],
+    "pictures": [
+      "../assets/projects/my-portfolio/cover.png"
+    ],
     "site": "https://fabriceportfolio.vercel.app/",
     "github": "https://github.com/Fabio1008"
   }
