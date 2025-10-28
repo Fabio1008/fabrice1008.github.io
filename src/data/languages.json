@@ -18,12 +18,6 @@
     "alt": "Icône Sass"
   },
   {
-    "id": "language4",
-    "title": "Bootstrap",
-    "image": "../assets/skills/languages/bootstrap.svg",
-    "alt": "Icône Bootstrap"
-  },
-  {
     "id": "language5",
     "title": "JavaScript",
     "image": "../assets/skills/languages/javascript.svg",
@@ -51,12 +45,6 @@
     "id": "language9",
     "title": "React-Router",
     "image": "../assets/skills/languages/react-router.svg",
-    "alt": "Icône React-Router"
-  },
-  {
-    "id": "language10",
-    "title": "Next.js",
-    "image": "../assets/skills/languages/nextjs.png",
     "alt": "Icône React-Router"
   },
   {
