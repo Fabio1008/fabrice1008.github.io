@@ -300,7 +300,7 @@
       "../assets/projects/my-portfolio/mock6.webp",
       "../assets/projects/my-portfolio/mock7.webp"
     ],
-    "site": "fabriceportfolio.vercel.app",
+    "site": "https://fabriceportfolio.vercel.app/",
     "github": "https://github.com/Fabio1008"
   }
 ]
