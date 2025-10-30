@@ -1,42 +1,40 @@
-import DarkMode from '../darkmode/darkmode'
-import LinkStyle from '../../utils/style/linkstyle'
-import '../../sass/components/_menu.scss'
+import { Link } from "react-router-dom";
+import DarkMode from "../darkmode/darkmode";
+import LinkStyle from "../../utils/style/linkstyle";
+import "../../sass/components/_menu.scss";
 
 const Menu = () => {
   return (
-    <div className="header__menu">
-      <ul>
+    <nav className="menu">
+      <ul className="menu__list">
         <LinkStyle />
+
         <li>
-          <a
-            className="link-theme"
-            href="/#a-propos"
-            onClick={() => (window.location.hash = '#a-propos')}
-          >
-            À PROPOS
-          </a>
+          <Link className="menu__link" to="/apropos">
+            À propos
+          </Link>
         </li>
         <li>
-          <a className="link-theme" href="/#skills">
-            COMPÉTENCES
-          </a>
+          <Link className="menu__link" to="/competences">
+            Compétences
+          </Link>
         </li>
         <li>
-          <a className="link-theme" href="/#projets">
-            PROJETS
-          </a>
+          <Link className="menu__link" to="/projets">
+            Projets
+          </Link>
         </li>
         <li>
-          <a className="link-theme" href="/#contact">
-            CONTACT
-          </a>
+          <Link className="menu__link" to="/contact">
+            Contact
+          </Link>
         </li>
-        <li>
+        <li className="menu__darkmode">
           <DarkMode />
         </li>
       </ul>
-    </div>
-  )
-}
+    </nav>
+  );
+};
 
-export default Menu
+export default Menu;

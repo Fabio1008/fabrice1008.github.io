@@ -1,78 +1,167 @@
-@import '../breakpoint';
-
 .intro {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  width: 96%;
-  @include mobile {
-    flex-direction: column;
-  }
-  &__title {
-    display: none;
-  }
-  &__desc {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+
+  &__container {
     display: flex;
-    flex-direction: column;
-    gap: 35px;
-    width: 60%;
-    @include mobile {
-      text-align: center;
-      width: 100%;
-    }
-    &-liens {
-      align-items: center;
-      display: flex;
-      margin-top: 20px;
-      @include mobile {
-        justify-content: center;
-        margin-right: -35px;
-      }
-      & a {
-        padding-right: 35px;
-        & img {
-          @include tablet {
-            height: 60px;
-            width: 60px;
-          }
-          @include mobile {
-            height: 60px;
-            width: 60px;
-          }
-        }
-      }
-    }
-  }
-  &__photo {
     align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &__text {
+    flex: 1 1 500px;
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #111;
+  }
+
+  &__paragraph {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    margin-top: 1.5rem;
+    background: #007bff;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #0056b3;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 86, 179, 0.5);
+    }
+  }
+
+  // Réseaux sociaux animés
+  &__socials {
     display: flex;
-    flex-direction: column;
-    gap: 35px;
-    width: 25%;
-    @include mobile {
-      margin-top: 40px;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    a {
+      display: inline-block;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px) scale(1.15);
+      }
+    }
+
+    img {
+      width: 35px;
+      height: 35px;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__photo {
+    flex: 0 0 300px;
+    text-align: center;
+    perspective: 1000px;
+
+    img {
       width: 100%;
-    }
-    & img {
-      border-radius: 0 25px;
-      max-height: auto;
-      max-width: 310px;
-      @include tablet {
-        max-width: 280px;
+      max-width: 250px;
+      border-radius: 50%;
+      border: 5px solid #007bff;
+      margin-bottom: 1rem;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+      &:hover {
+        transform: rotateY(15deg) rotateX(5deg) scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 123, 255, 0.5);
       }
-      @include mobile {
-        max-width: 280px;
-      }
     }
-    & h3 {
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      margin-top: 10px;
-      @include tablet {
-        font-size: 16px;
-        letter-spacing: 1.2px;
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  &__role {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+  }
+
+  // Responsive
+  @media (max-width: 900px) {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__photo {
+      margin-top: 2rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__paragraph {
+      font-size: 1rem;
+    }
+
+    &__btn {
+      padding: 0.6rem 1.5rem;
+    }
+
+    &__photo {
+      img {
+        max-width: 200px;
+      }
+
+      &__name {
+        font-size: 1.3rem;
+      }
+
+      &__role {
+        font-size: 1rem;
       }
     }
   }
 }
+

@@ -1,85 +1,114 @@
-import { useTheme } from '../../utils/hooks/index'
-import DownloadBtn from '../../components/downloadbtn/downloadbtn'
-import MaPhoto from '../../assets/photo/moi.webp'
-import GitHub from '../../assets/icones/github.png'
-import DarkGitHub from '../../assets/icones/darkgithub.png'
-import LinkedIn from '../../assets/icones/linkedin.png'
-import DarkLinkedIn from '../../assets/icones/darklinkedin.png'
-import Twitter from '../../assets/icones/twitter.png'
-import DarkTwitter from '../../assets/icones/darktwitter.png'
-import ImageStyle from '../../utils/style/imagestyle'
-import '../../sass/containers/_introduction.scss'
+
+
+import React, { useEffect, useRef, useState } from "react";
+import { useTheme } from "../../utils/hooks/index";
+import DownloadBtn from "../../components/downloadbtn/downloadbtn";
+import MaPhoto from "../../assets/photo/moi.webp";
+
+// Icônes adaptatives selon le thème
+import GitHub from "../../assets/icones/github.png";
+import DarkGitHub from "../../assets/icones/darkgithub.png";
+import LinkedIn from "../../assets/icones/linkedin.png";
+import DarkLinkedIn from "../../assets/icones/darklinkedin.png";
+import Twitter from "../../assets/icones/twitter.png";
+import DarkTwitter from "../../assets/icones/darktwitter.png";
+
+import "../../sass/containers/_introduction.scss";
 
 const Introduction = () => {
-  const { darkMode } = useTheme()
+  const { darkMode } = useTheme();
+  const introRef = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.2 }
+    );
+
+    if (introRef.current) observer.observe(introRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <section className="intro">
-      <h2 id="a-propos" className="intro__title">
-        À propos
-      </h2>
+    <section className="intro" ref={introRef}>
+      <div className={`intro__container ${isVisible ? "visible" : ""}`}>
+        {/* Texte de présentation */}
+        <div className="intro__text">
+          <h2 className="intro__title">À propos</h2>
 
-      <div className="intro__desc">
-        <p>
-          Passionné par les nouvelles technologies, j'ai choisi de me
-          reconvertir professionnellement après des années passées dans le sport et la logistique. 
-        </p>
+          <p className="intro__paragraph">
+            Passionné par les nouvelles technologies, j'ai choisi de me reconvertir
+            après des années dans le sport et la logistique.
+          </p>
+          <p className="intro__paragraph">
+            J’ai suivi la formation certifiante d’intégrateur web d’OpenClassrooms,
+            où j’ai acquis des compétences solides en HTML, CSS, JavaScript et React.
+          </p>
+          <p className="intro__paragraph">
+            Je suis enthousiaste à l’idée de travailler sur des projets innovants
+            et de continuer à développer mes compétences en développement web.
+          </p>
 
-        <p>
-          Afin de me développer dans le domaine du développement web, j’ai
-          intégré la formation certifiante intégrateur web niveau Bac +2
-          d’OpenClassrooms au cours de laquelle j’ai acquis des compétences
-          solides en HTML, CSS, JavaScript et React.
-        </p>
+          {/* Liens vers les réseaux sociaux */}
+          <div className={`intro__socials ${isVisible ? "visible" : ""}`}>
+            <a
+              href="https://github.com/Fabio1008"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Profil GitHub"
+            >
+              <img
+                src={darkMode ? DarkGitHub : GitHub}
+                alt="Lien vers mon profil GitHub"
+              />
+            </a>
 
-        <p>
-          Je suis très enthousiaste à l’idée de découvrir de nouvelles
-          opportunités et développer de nouvelles compétences dans le domaine du
-          développement web tout en perfectionnant celles déjà acquises.
-        </p>
+            <a
+              href="https://www.linkedin.com/in/amonk%C3%A9-mongba-739078a9/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Profil LinkedIn"
+            >
+              <img
+                src={darkMode ? DarkLinkedIn : LinkedIn}
+                alt="Lien vers mon profil LinkedIn"
+              />
+            </a>
 
-        {/* Liens vers les réseaux */}
-        <div className="intro__desc-liens">
-          <a href="https://github.com/Fabio1008" target="blank" rel="noreferrer">
-            <img
-              src={darkMode ? DarkGitHub : GitHub}
-              alt="Lien vers mon profil Github"
-            />
-          </a>
+            <a
+              href="https://x.com/FMongba"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Profil Twitter"
+            >
+              <img
+                src={darkMode ? DarkTwitter : Twitter}
+                alt="Lien vers mon profil Twitter"
+              />
+            </a>
+          </div>
 
-          <a href="https://www.linkedin.com/in/amonk%C3%A9-mongba-739078a9/" target="blank" rel="noreferrer">
-            <img
-              src={darkMode ? DarkLinkedIn : LinkedIn}
-              alt="Lien vers mon profil LinkedIn"
-            />
-          </a>
-
-          <a href="https://x.com/FMongba" target="blank" rel="noreferrer">
-            <img
-              src={darkMode ? DarkTwitter : Twitter}
-              alt="Lien vers mon profil Twitter"
-            />
+          {/* Bouton de téléchargement du CV */}
+          <a
+            href="/CV_Fabrice_MONGBA.pdf"
+            className="intro__btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <DownloadBtn> Télécharger mon CV </DownloadBtn>
           </a>
         </div>
 
-        {/* Bouton de téléchargement du CV */}
-        <DownloadBtn />
-      </div>
-
-      {/* Photo + nom */}
-      <div className="intro__photo">
-        <ImageStyle />
-        <img
-          className="image-theme"
-          src={MaPhoto}
-          alt="Portrait de Fabrice MONGBA"
-        />
-        <h3>Fabrice MONGBA</h3>
-        <h3>Développeur front-end</h3>
+        {/* Photo et nom */}
+        <div className="intro__photo">
+          <img src={MaPhoto} alt="Portrait de Fabrice MONGBA" />
+          <h3 className="intro__name">Fabrice MONGBA</h3>
+          <h4 className="intro__role">Développeur Front-End</h4>
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Introduction
-
+export default Introduction;

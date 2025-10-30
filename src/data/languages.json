@@ -17,12 +17,7 @@
     "image": "../assets/skills/languages/sass.svg",
     "alt": "Icône Sass"
   },
-  {
-    "id": "language4",
-    "title": "Bootstrap",
-    "image": "../assets/skills/languages/bootstrap.svg",
-    "alt": "Icône Bootstrap"
-  },
+
   {
     "id": "language5",
     "title": "JavaScript",
@@ -57,12 +52,6 @@
     "id": "language10",
     "title": "Next.js",
     "image": "../assets/skills/languages/nextjs.png",
-    "alt": "Icône React-Router"
-  },
-  {
-    "id": "language11",
-    "title": "Node.js",
-    "image": "../assets/skills/languages/nodejs.png",
     "alt": "Icône React-Router"
   },
   {

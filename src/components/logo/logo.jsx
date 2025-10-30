@@ -15,7 +15,7 @@ const Logo = () => {
           alt="Logo Fabrice Mongba"
           className="logo-image"
         />
-        <span className="logo-text">Fabrice Mongba</span>
+        <span className="logo-text">Portfolio — Fabrice MONGBA</span>
       </Link>
     </div>
   );

@@ -1,0 +1,16 @@
+
+
+$color-primary: #007bff;
+$color-secondary: #6c757d;
+$color-background-light: #f5f5f5;
+$color-background-dark: #1c1c1c;
+$color-text-dark: #222;
+$color-text-light: #fff;
+$font-main: 'Poppins', sans-serif;
+$font-title: 'Montserrat', sans-serif;
+
+:root {
+  font-family: $font-main;
+  color: $color-text-dark;
+  background-color: $color-background-light;
+}

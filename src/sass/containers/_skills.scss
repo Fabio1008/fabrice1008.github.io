@@ -3,59 +3,48 @@
 .skills {
   margin-top: 50px;
   width: 100%;
-  &__title {
-    font-size: 32px;
-    text-align: center;
-    @include tablet {
-      font-size: 28px;
-    }
-    @include mobile {
-      font-size: 28px;
-    }
-  }
+
   &__display {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
     width: 100%;
+    gap: 20px; // ajoute de l'espace entre tools et languages
+
     @include mobile {
       align-items: center;
       flex-direction: column-reverse;
     }
   }
-  &__tools {
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    width: 35%;
-    @include mobile {
-      margin-top: 30px;
-      width: 90%;
-    }
-    &-title {
-      font-size: 24px;
-      text-align: center;
-      @include tablet {
-        font-size: 20px;
-      }
-      @include mobile {
-        font-size: 20px;
-      }
-    }
-  }
+
+  &__tools,
   &__languages {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    width: 56%;
+    padding: 20px;
+    background: #f8f9fa; // fond léger pour encadrer
+    border: 2px solid #007bff; // bordure colorée
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
     @include mobile {
       width: 90%;
+      margin-top: 30px;
     }
+
     &-title {
       font-size: 24px;
       text-align: center;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #007bff;
+
       @include tablet {
         font-size: 20px;
       }

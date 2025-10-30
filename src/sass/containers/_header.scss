@@ -1,14 +1,44 @@
-@import '../breakpoint';
-
 .header {
-  display: flex;
-  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  @include mobile {
+  height: 70px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+
+  &__container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
   }
+
   &__title {
-    display: none;
+    flex: 1;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: 0.5px;
   }
+
+  body.dark-mode & {
+    background: rgba(20, 20, 20, 0.9);
+
+    .header__title {
+      color: #f1f1f1;
+    }
+  }
+}
+
+/* Pour éviter que le header ne cache l’introduction */
+body {
+  padding-top: 70px; /* même hauteur que le header */
 }

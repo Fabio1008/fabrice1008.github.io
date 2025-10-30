@@ -5,7 +5,6 @@ import '../../sass/containers/_skills.scss'
 const Skills = () => {
   return (
     <section id="skills" className="skills">
-      <h2 className="skills__title">Mes compétences</h2>
       <div className="skills__display">
         <div className="skills__tools image-theme">
           <h3 className="skills__tools-title">Logiciels</h3>
