@@ -9,14 +9,15 @@
   }
 
   &__link {
+    position: relative;
     background: none;
     border: none;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     color: #333;
+    text-decoration: none;
     transition: all 0.3s ease;
-    position: relative;
 
     &:hover {
       color: #007bff;
@@ -36,6 +37,15 @@
 
     &:hover::after {
       width: 100%;
+    }
+
+    &.active {
+      color: #007bff;
+      font-weight: 600;
+
+      &::after {
+        width: 100%;
+      }
     }
   }
 
@@ -61,6 +71,15 @@
 
       &::after {
         background-color: #66fcf1;
+      }
+
+      &.active {
+        color: #66fcf1;
+        font-weight: 600;
+
+        &::after {
+          width: 100%;
+        }
       }
     }
   }

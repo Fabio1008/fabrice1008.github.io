@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import DarkMode from "../darkmode/darkmode";
 import LinkStyle from "../../utils/style/linkstyle";
 import "../../sass/components/_menu.scss";
@@ -10,25 +10,49 @@ const Menu = () => {
         <LinkStyle />
 
         <li>
-          <Link className="menu__link" to="/apropos">
+          <NavLink
+            to="/apropos"
+            className={({ isActive }) =>
+              isActive ? "menu__link active" : "menu__link"
+            }
+          >
             À propos
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link className="menu__link" to="/competences">
+          <NavLink
+            to="/competences"
+            className={({ isActive }) =>
+              isActive ? "menu__link active" : "menu__link"
+            }
+          >
             Compétences
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link className="menu__link" to="/projets">
+          <NavLink
+            to="/projets"
+            className={({ isActive }) =>
+              isActive ? "menu__link active" : "menu__link"
+            }
+          >
             Projets
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link className="menu__link" to="/contact">
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "menu__link active" : "menu__link"
+            }
+          >
             Contact
-          </Link>
+          </NavLink>
         </li>
+
         <li className="menu__darkmode">
           <DarkMode />
         </li>

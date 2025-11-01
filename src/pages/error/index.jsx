@@ -6,23 +6,32 @@ import '../../sass/pages/_error.scss'
 
 const Error = () => {
   const { darkMode } = useTheme()
+
   return (
     <main className="error">
-      <h1 className="error__title">Page d'erreur</h1>
-      <img
-        className="error__image"
-        src={darkMode ? DarkError : LightError}
-        alt="erreur 404"
-      />
-      <p className="error_text">LA PAGE QUE VOUS DEMANDEZ N'EXISTE PAS...</p>
-      <ButtonStyle />
-      <a href="/">
-        <button className="error__button theme-color">
-          Retourner à la page d'accueil
-        </button>
-      </a>
+      <div className="error__content">
+        <h1 className="error__title">Oups !</h1>
+        <img
+          className="error__image"
+          src={darkMode ? DarkError : LightError}
+          alt="Erreur 404 - page non trouvée"
+        />
+        <p className="error__text">
+          La page que vous cherchez n’existe pas ou a été déplacée.
+        </p>
+
+        <div className="error__actions">
+          <ButtonStyle />
+          <a href="/">
+            <button className="error__button theme-color">
+              Retourner à l’accueil
+            </button>
+          </a>
+        </div>
+      </div>
     </main>
   )
 }
 
 export default Error
+

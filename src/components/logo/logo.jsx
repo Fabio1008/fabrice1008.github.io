@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "../../utils/hooks/index";
-import LogoLight from "../../assets/logo/fabrice-mongba-logo.png"; // Logo clair
-import LogoDark from "../../assets/logo/fabrice-mongba-logol.png";  // Logo sombre (peut être le même si tu n’en as qu’un)
+import LogoLight from "../../assets/logo/fabrice-mongba-logo.png";
+import LogoDark from "../../assets/logo/fabrice-mongba-logol.png";
 import "../../sass/components/_logo.scss";
 
 const Logo = () => {
@@ -10,11 +10,13 @@ const Logo = () => {
   return (
     <div className="header__logo">
       <Link to="/">
-        <img
-          src={darkMode ? LogoDark : LogoLight}
-          alt="Logo Fabrice Mongba"
-          className="logo-image"
-        />
+        <div className="logo__medaillon">
+          <img
+            src={darkMode ? LogoDark : LogoLight}
+            alt="Logo Fabrice Mongba"
+            className="logo__image"
+          />
+        </div>
         <span className="logo-text">Portfolio — Fabrice MONGBA</span>
       </Link>
     </div>
@@ -22,4 +24,3 @@ const Logo = () => {
 };
 
 export default Logo;
-

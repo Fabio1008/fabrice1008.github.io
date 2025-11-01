@@ -18,7 +18,7 @@ const Accueil = () => {
         <p className="accueil__subtitle">
           Je suis Fabrice MONGBA, Développeur Front-End
         </p>
-        <a href="/#a-propos" className="accueil__btn">
+        <a href="/apropos" className="accueil__btn">
           Découvrir
         </a>
       </div>

@@ -43,3 +43,15 @@ p {
     letter-spacing: 0.8px;
   }
 }
+@supports (-webkit-overflow-scrolling: touch) {
+  html {
+    -webkit-overflow-scrolling: touch; /* For older iOS support */
+  }
+}
+
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+

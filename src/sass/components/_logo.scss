@@ -11,22 +11,58 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 0.8rem;
     text-decoration: none;
-    gap: 0.5rem; // petit espace entre le logo et le texte
   }
 
-  img {
-    width: 140px;
-    height: auto;
-    transition: transform 0.3s ease, filter 0.3s ease;
+  // 🟣 Médaillon autour du logo
+  .logo__medaillon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:
+      4px 4px 10px rgba(0, 0, 0, 0.15),
+      -4px -4px 10px rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 
     &:hover {
       transform: scale(1.05);
-      filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.15));
+      box-shadow:
+        6px 6px 14px rgba(0, 0, 0, 0.2),
+        -4px -4px 12px rgba(255, 255, 255, 0.7);
+    }
+
+    // 🌙 Médaillon en mode sombre
+    body.dark-mode & {
+      background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
+      box-shadow:
+        4px 4px 10px rgba(0, 0, 0, 0.6),
+        -4px -4px 10px rgba(255, 255, 255, 0.05);
     }
   }
 
-  // 🧾 Nom à côté du logo
+  // 🖼️ Image du logo à l’intérieur du médaillon
+  .logo__image {
+    width: 65%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: rotate(5deg);
+    }
+
+    body.dark-mode & {
+      filter: brightness(0.9);
+    }
+  }
+
+  // 🧾 Nom du portfolio à côté
   .logo-text {
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
@@ -35,21 +71,21 @@
     letter-spacing: 0.5px;
     transition: color 0.3s ease;
 
-    // Mode sombre
     body.dark-mode & {
       color: #f5f5f5;
     }
   }
 
-  // 🌙 Mode sombre sur le logo
-  body.dark-mode & img {
-    filter: brightness(0.9);
-  }
-
   // 📱 Responsive
   @media (max-width: 768px) {
-    img {
-      width: 120px;
+    a {
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .logo__medaillon {
+      width: 75px;
+      height: 75px;
     }
 
     .logo-text {
@@ -58,8 +94,9 @@
   }
 
   @media (max-width: 480px) {
-    img {
-      width: 100px;
+    .logo__medaillon {
+      width: 60px;
+      height: 60px;
     }
 
     .logo-text {

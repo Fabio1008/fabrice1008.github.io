@@ -1,0 +1,17 @@
+.mentions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 40px;
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__subtitle {
+    margin-top: 10px;
+  }
+  &__list {
+    list-style: circle;
+    margin-left: 35px;
+  }
+}

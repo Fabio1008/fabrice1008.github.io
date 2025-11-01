@@ -1,6 +1,6 @@
 import React from "react";
 import '../../sass/containers/_apropos.scss';
-import Introduction from "../introduction/introduction"; // chemin correct selon ton dossier
+import Introduction from "../introduction/introduction";
 
 const Apropos = () => {
   return (

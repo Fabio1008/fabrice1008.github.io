@@ -1,33 +1,54 @@
+@import '../breakpoint';
+
 .competences {
-  padding: 5rem 2rem;
-  max-width: 800px;
+  padding: 6rem 3rem;
+  max-width: 1200px;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
   color: #222;
+  transition: background 0.3s ease, color 0.3s ease;
 
+  /* Titre principal */
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 800;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
+  /* Liste des compétences */
   &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    width: 100%;
   }
 
+  /* Bloc individuel */
   &__item {
-    display: flex;
-    flex-direction: column;
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
   }
 
+  /* Nom de la compétence */
   &__name {
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: inherit;
   }
 
+  /* Barre de progression */
   &__bar {
     background: #e0e0e0;
     height: 20px;
@@ -36,9 +57,53 @@
   }
 
   &__progress {
-    background: #007bff;
+    background: linear-gradient(90deg, #007bff, #00b4d8);
     height: 100%;
     border-radius: 10px;
     transition: width 1s ease-in-out;
+  }
+
+  /* ✅ Mode sombre */
+  .dark & {
+    background: #121212;
+    color: #ffffff;
+
+    h1 {
+      color: #ffffff;
+    }
+
+    &__item {
+      background: #1e1e1e;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+    }
+
+    &__bar {
+      background: #333;
+    }
+
+    &__progress {
+      background: linear-gradient(90deg, #00b4d8, #90e0ef);
+    }
+  }
+
+  /* ✅ Responsive */
+  @include tablet {
+    padding: 4rem 2rem;
+
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+
+  @include mobile {
+    padding: 3rem 1rem;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    &__list {
+      grid-template-columns: 1fr;
+    }
   }
 }
