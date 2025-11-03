@@ -8,7 +8,6 @@
   color: #222;
   transition: background 0.3s ease, color 0.3s ease;
 
-  /* Titre principal */
   h1 {
     font-size: 2.8rem;
     font-weight: 800;
@@ -18,7 +17,6 @@
     letter-spacing: 1px;
   }
 
-  /* Liste des compétences */
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -26,7 +24,6 @@
     width: 100%;
   }
 
-  /* Bloc individuel */
   &__item {
     background: #f8f9fa;
     border-radius: 15px;
@@ -40,7 +37,6 @@
     }
   }
 
-  /* Nom de la compétence */
   &__name {
     font-weight: 600;
     font-size: 1.2rem;
@@ -48,7 +44,6 @@
     color: inherit;
   }
 
-  /* Barre de progression */
   &__bar {
     background: #e0e0e0;
     height: 20px;
@@ -63,8 +58,8 @@
     transition: width 1s ease-in-out;
   }
 
-  /* ✅ Mode sombre */
-  .dark & {
+  // ✅ Mode sombre corrigé
+  body.dark-mode & {
     background: #121212;
     color: #ffffff;
 
@@ -72,21 +67,20 @@
       color: #ffffff;
     }
 
-    &__item {
+    .competences__item {
       background: #1e1e1e;
       box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
     }
 
-    &__bar {
+    .competences__bar {
       background: #333;
     }
 
-    &__progress {
+    .competences__progress {
       background: linear-gradient(90deg, #00b4d8, #90e0ef);
     }
   }
 
-  /* ✅ Responsive */
   @include tablet {
     padding: 4rem 2rem;
 

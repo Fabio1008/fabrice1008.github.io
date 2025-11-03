@@ -20,7 +20,7 @@ const Project = () => {
   return (
     <main className="project">
       <div className="project__header">
-        <a href="/">
+        <a href="/projets">
           <img
             className="project__header-arrow"
             src={darkMode ? DarkArrow : LightArrow}

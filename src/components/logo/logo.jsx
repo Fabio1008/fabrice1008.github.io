@@ -17,7 +17,6 @@ const Logo = () => {
             className="logo__image"
           />
         </div>
-        <span className="logo-text">Portfolio — Fabrice MONGBA</span>
       </Link>
     </div>
   );

@@ -1,6 +1,6 @@
 // Media queries mobile
 @mixin mobile {
-  @media (min-width: 399.99px) and (max-width: 767.99px) {
+  @media (min-width: 199.99px) and (max-width: 767.99px) {
     @content;
   }
 }
