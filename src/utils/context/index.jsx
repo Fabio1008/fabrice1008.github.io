@@ -1,10 +1,6 @@
 import React, { useState, useEffect, createContext } from 'react'
-import {
-  createGlobalStyle,
-  ThemeProvider as StyledThemeProvider,
-} from 'styled-components'
+import { createGlobalStyle, ThemeProvider as StyledThemeProvider } from 'styled-components'
 
-/* 🎨 Palette harmonieuse inspirée du design moderne */
 const lightTheme = {
   background: '#F9FAFB',
   text: '#1E1E1E',
@@ -42,34 +38,6 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  /* 💼 Style des cartes projets */
-  .grid__project__card-front {
-    background: ${(props) => props.theme.cardBg};
-    box-shadow: 0 4px 12px ${(props) => props.theme.cardShadow};
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    &:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 6px 16px ${(props) => props.theme.cardShadow};
-    }
-  }
-
-  .grid__project__card-front-title {
-    color: ${(props) => props.theme.text};
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    text-align: center;
-  }
-
-  .grid__project__card-back {
-    background-color: ${(props) => props.theme.cardBg};
-    color: ${(props) => props.theme.secondary};
-    border-top: 2px solid ${(props) => props.theme.accent};
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  /* 🌙 Ajout d’une transition globale douce pour tout le site */
   * {
     transition: background-color 0.4s ease, color 0.4s ease, border 0.4s ease;
   }
@@ -94,6 +62,11 @@ export const ThemeProvider = ({ children }) => {
     const savedDarkMode = JSON.parse(localStorage.getItem('darkMode'))
     if (savedDarkMode !== null) setDarkMode(savedDarkMode)
   }, [])
+
+  // ⚡ Forcing data-theme sur le body
+  useEffect(() => {
+    document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light')
+  }, [darkMode])
 
   const theme = darkMode ? darkTheme : lightTheme
 

@@ -9,11 +9,13 @@
     justify-content: space-between;
     margin-top: 50px;
     width: 100%;
-    gap: 20px; // ajoute de l'espace entre tools et languages
+    gap: 20px; // espace entre tools et languages
 
-    @include mobile {
+    // ✅ Responsive pour mobile : colonne verticale
+    @include forMobile {
+      flex-direction: column;
       align-items: center;
-      flex-direction: column-reverse;
+      gap: 20px; // même espacement entre les items
     }
   }
 
@@ -23,8 +25,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background: #f8f9fa; // fond léger pour encadrer
-    border: 2px solid #007bff; // bordure colorée
+    border: 2px solid #007bff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 
@@ -33,9 +34,10 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 
-    @include mobile {
+    // ✅ Responsive mobile : largeur réduite et centrage
+    @include forMobile {
       width: 90%;
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
     &-title {
@@ -45,10 +47,10 @@
       margin-bottom: 15px;
       color: #007bff;
 
-      @include tablet {
+      @include forTablet {
         font-size: 20px;
       }
-      @include mobile {
+      @include forMobile {
         font-size: 20px;
       }
     }

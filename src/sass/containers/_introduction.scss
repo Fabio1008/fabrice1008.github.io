@@ -1,6 +1,6 @@
 .intro {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: transparent !important; // fond transparent pour ton VANTA ou effet arrière-plan
   color: #222;
   font-family: "Poppins", sans-serif;
   overflow: hidden;
@@ -38,7 +38,7 @@
     font-size: 1.15rem;
     line-height: 1.8;
     margin-bottom: 1rem;
-    color: #333;
+    color: #111;
   }
 
   &__btn {
@@ -60,7 +60,6 @@
     }
   }
 
-  // Réseaux sociaux animés
   &__socials {
     display: flex;
     align-items: center;
@@ -82,12 +81,12 @@
       &:hover {
         transform: translateY(-5px) scale(1.15);
       }
-    }
 
-    img {
-      width: 35px;
-      height: 35px;
-      transition: transform 0.3s ease;
+      img {
+        width: 35px;
+        height: 35px;
+        transition: transform 0.3s ease;
+      }
     }
   }
 
@@ -123,6 +122,29 @@
     color: #555;
   }
 
+  // 🌙 Dark mode
+  body[data-theme='dark'] & {
+    color: #ffffff !important;
+
+    .intro__title,
+    .intro__paragraph,
+    .intro__name,
+    .intro__role {
+      color: #ffffff !important;
+    }
+
+    .intro__btn {
+      background: #a3dee7 !important;
+      color: #111 !important;
+      box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+    }
+
+    .intro__photo img {
+      border-color: #a3dee7 !important;
+      box-shadow: 0 10px 25px rgba(255, 193, 7, 0.3);
+    }
+  }
+
   // Responsive
   @media (max-width: 900px) {
     &__container {
@@ -149,19 +171,16 @@
       padding: 0.6rem 1.5rem;
     }
 
-    &__photo {
-      img {
-        max-width: 200px;
-      }
+    &__photo img {
+      max-width: 200px;
+    }
 
-      &__name {
-        font-size: 1.3rem;
-      }
+    &__name {
+      font-size: 1.3rem;
+    }
 
-      &__role {
-        font-size: 1rem;
-      }
+    &__role {
+      font-size: 1rem;
     }
   }
 }
-

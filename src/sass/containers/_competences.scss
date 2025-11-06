@@ -15,6 +15,7 @@
     margin-bottom: 3rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: color 0.3s ease;
   }
 
   &__list {
@@ -29,7 +30,7 @@
     border-radius: 15px;
     padding: 1.5rem 2rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 
     &:hover {
       transform: translateY(-5px);
@@ -42,6 +43,7 @@
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
     color: inherit;
+    transition: color 0.3s ease;
   }
 
   &__bar {
@@ -49,47 +51,52 @@
     height: 20px;
     border-radius: 10px;
     overflow: hidden;
+    transition: background 0.3s ease;
   }
 
   &__progress {
     background: linear-gradient(90deg, #007bff, #00b4d8);
     height: 100%;
     border-radius: 10px;
-    transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out, background 0.3s ease;
   }
 
-  // ✅ Mode sombre corrigé
-  body.dark-mode & {
-    background: #121212;
+  /* 🌙 Dark mode */
+  body[data-theme='dark'] & {
     color: #ffffff;
 
     h1 {
       color: #ffffff;
     }
 
-    .competences__item {
+    &__item {
       background: #1e1e1e;
       box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
     }
 
-    .competences__bar {
+    &__bar {
       background: #333;
     }
 
-    .competences__progress {
+    &__progress {
       background: linear-gradient(90deg, #00b4d8, #90e0ef);
     }
   }
 
-  @include tablet {
+  /* ✅ Utilisation correcte des mixins responsive */
+  @include forTablet {
     padding: 4rem 2rem;
 
     h1 {
       font-size: 2.2rem;
     }
+
+    &__list {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
   }
 
-  @include mobile {
+  @include forMobile {
     padding: 3rem 1rem;
 
     h1 {
@@ -98,6 +105,11 @@
 
     &__list {
       grid-template-columns: 1fr;
+      gap: 1.2rem;
+    }
+
+    &__item {
+      padding: 1rem 1.5rem;
     }
   }
 }

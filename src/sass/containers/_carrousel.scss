@@ -3,11 +3,11 @@
 .carousel img {
   max-height: 600px;
   max-width: 600px;
-  @include tablet {
+  @mixin forTablet {
     max-height: 600px;
     max-width: 400px;
   }
-  @include mobile {
+  @mixin forMobile {
     max-height: 600px;
     max-width: 400px;
   }

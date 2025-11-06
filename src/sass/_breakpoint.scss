@@ -1,13 +1,51 @@
-// Media queries mobile
-@mixin mobile {
-  @media (min-width: 199.99px) and (max-width: 767.99px) {
+@mixin centerRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+@mixin centerColumn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin spaceBetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+@mixin forMobile {
+  @media (max-width: 767.98px) {
     @content;
   }
 }
 
-// Media queries tablette
-@mixin tablet {
-  @media (min-width: 768px) and (max-width: 1023.99px) {
+
+@mixin forLargeMobile {
+  @media (min-width:400px){
+    @content;
+  }
+}
+
+@mixin forTablet {
+  @media (min-width:768px){
+    @content;
+  }
+}
+
+@mixin forDesktop {
+  @media (min-width:1024px){
+    @content;
+  }
+}
+
+@mixin forLargeDesktop {
+  @media (min-width:1515px){
     @content;
   }
 }

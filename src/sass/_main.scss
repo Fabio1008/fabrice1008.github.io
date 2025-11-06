@@ -10,10 +10,10 @@ body {
   height: auto;
   margin: 20px 5%;
   width: 90%;
-  @include tablet {
+  @mixin forTablet {
     margin: 20px 4%;
   }
-  @include mobile {
+  @mixin forMobile {
     margin: 20px 6%;
     overflow-x: hidden;
   }
@@ -38,7 +38,7 @@ p {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   letter-spacing: 0.5px;
-  @include tablet {
+  @mixin forTablet {
     font-size: 16px;
     letter-spacing: 0.8px;
   }

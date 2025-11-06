@@ -1,4 +1,4 @@
-@import '../breakpoint'; // <-- ✅ ajoute ceci tout en haut
+@import '../breakpoint'; // ✅ indispensable pour utiliser les mixins
 
 .menu {
   &__list {
@@ -10,7 +10,8 @@
     list-style: none;
     transition: all 0.3s ease;
 
-    @include mobile {
+    /* ✅ responsive mobile */
+    @include forMobile {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
@@ -26,7 +27,7 @@
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    color: #333;
+    color: #111;
     text-decoration: none;
     transition: all 0.3s ease;
 
@@ -59,7 +60,8 @@
       }
     }
 
-    @include mobile {
+    /* ✅ responsive mobile */
+    @include forMobile {
       font-size: 0.9rem;
     }
   }
@@ -67,11 +69,13 @@
   &__darkmode {
     margin-left: 1rem;
 
-    @include mobile {
+    /* ✅ réajustement mobile */
+    @include forMobile {
       margin-left: 0;
     }
   }
 
+  /* 🌙 mode sombre */
   body.dark-mode & {
     .menu__link {
       color: #eee;

@@ -1,62 +1,33 @@
 .accueil {
-  height: 100vh; // plein écran
+  position: relative;
   width: 100%;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%);
-  color: #fff;
   text-align: center;
-  overflow: hidden;
-  position: relative;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  
+
 
   &__content {
+    position: relative;
+    z-index: 3;
     opacity: 0;
-    transform: rotateY(-15deg) translateY(50px);
+    transform: translateY(30px);
     transition: all 1s ease;
 
     &.visible {
       opacity: 1;
-      transform: rotateY(0) translateY(0);
+      transform: translateY(0);
     }
   }
 
-  &__title {
-    font-size: 3rem;
-    font-weight: 900;
-    margin-bottom: 1rem;
-
-    span {
-      color: #ffc107;
-    }
-
-    @media (max-width: 768px) {
-      font-size: 2.2rem;
-    }
-  }
-
-  &__subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-
-    @media (max-width: 768px) {
-      font-size: 1.2rem;
-    }
-  }
-
-  &__btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    font-weight: 600;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #007bff;
-    background: #fff;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background: #ffc107;
-      transform: scale(1.05);
-    }
+  &__title { font-size: 3rem; font-weight: 900; margin-bottom: 1rem; }
+  &__subtitle { font-size: 1.5rem; margin-bottom: 2rem; }
+  &__btn { padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; color: #007bff; background: #fff; transition: all 0.3s ease;
+    &:hover { background: #ffc107; transform: scale(1.05); }
   }
 }

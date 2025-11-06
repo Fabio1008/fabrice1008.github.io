@@ -2,13 +2,16 @@
 
 .contact {
   margin-top: 50px;
+  @include forDesktop {
+    margin-left: 20px;
+  }
   &__title {
     font-size: 32px;
     text-align: center;
-    @include tablet {
+    @mixin forTablet {
       font-size: 28px;
     }
-    @include mobile {
+    @mixin forMobile {
       font-size: 28px;
     }
   }

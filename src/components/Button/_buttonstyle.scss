@@ -2,7 +2,7 @@
 
 // Conteneur pour le bouton CV (centré sur mobile)
 .button-cv {
-  @include mobile {
+  @include forMobile {
     display: flex;
     justify-content: center;
   }

@@ -3,7 +3,7 @@
 .tags {
   display: flex;
   gap: 10px;
-  @include mobile {
+  @mixin forMobile {
     flex-wrap: wrap;
   }
 }

@@ -21,10 +21,10 @@
   gap: 50px;
   justify-content: space-between;
   margin-top: 100px;
-  @include tablet {
+  @mixin forTablet {
     grid-template-columns: 1fr 1fr;
   }
-  @include mobile {
+  @mixin forMobile {
     grid-template-columns: 1fr;
   }
   &__card {
@@ -32,7 +32,7 @@
     height: 350px;
     perspective: 1000px;
     width: 100%;
-    @include tablet {
+    @mixin forTablet {
       height: 300px;
     }
     &-inner {
@@ -51,7 +51,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      @include tablet {
+      @mixin forTablet {
         height: 300px;
       }
       &-img {
@@ -81,7 +81,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      @include tablet {
+      @mixin forTablet {
         height: 300px;
       }
       transform: rotateY(180deg);
@@ -100,7 +100,7 @@
         position: absolute;
         right: 20px;
         top: 320px;
-        @include tablet {
+        @mixin tablet {
           top: 250px;
         }
       }

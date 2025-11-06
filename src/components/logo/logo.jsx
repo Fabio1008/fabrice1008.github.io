@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "../../utils/hooks/index";
-import LogoLight from "../../assets/logo/fabrice-mongba-logo.png";
-import LogoDark from "../../assets/logo/fabrice-mongba-logol.png";
+import LogoLight from "../../assets/logo/light.png";
+import LogoDark from "../../assets/logo/dark.png";
 import "../../sass/components/_logo.scss";
 
 const Logo = () => {
