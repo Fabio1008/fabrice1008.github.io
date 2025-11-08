@@ -13,10 +13,10 @@ export const Form = () => {
     e.preventDefault()
     emailjs
       .sendForm(
-        'service_g9v4cvy',
-        'template_r0xirue',
+        'service_kecnprq',
+        'template_brohb24',
         form.current,
-        'XPl0FQOrTSCNdoxnk',
+        '7WM9agBmHEj7W6tuG',
       )
       .then(
         (result) => {
